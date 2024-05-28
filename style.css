@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3498db; /* New background color: Blue */
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #ecf0f1; /* New text color: Light gray */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 0 auto; /* Center the board */
+    background-color: #2ecc71; /* New board background color: Green */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c; /* New cell background color: Red */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #e67e22; /* New hover color: Orange */
+}
+
+.cell.X {
+    color: #2c3e50; /* Darker gray */
+}
+
+.cell.O {
+    color: #f1c40f; /* New O color: Yellow */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #8e44ad; /* New button background color: Purple */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9b59b6; /* New button hover color: Light Purple */
+}
+
+.status {
+    margin-bottom: 20px;
+}
+
+.status p {
+    color: #ecf0f1; /* New status text color: Light gray */
+}
+
+#reset-btn {
+    margin-top: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    color: #ecf0f1; /* New footer text color: Light gray */
+    font-size: 0.8em;
+}
